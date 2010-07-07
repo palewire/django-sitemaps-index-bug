@@ -6,8 +6,8 @@ Here's the nut: If I try to use the "index" sitemap for more than one app, every
 
 To see what I mean, download the app and visit the two following urls:
 
-<pre><code>http://localhost:8888/app1/sitemap.xml
-http://localhost:8888/app2/sitemap.xml</code></pre>
+<pre><code>http://localhost:8000/app1/sitemap.xml
+http://localhost:8000/app2/sitemap.xml</code></pre>
 
 What you'll see is that both of the pagination url sets point to the app2 subdirectory.
 

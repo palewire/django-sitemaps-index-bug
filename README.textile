@@ -11,8 +11,7 @@ http://localhost:8000/app2/sitemap.xml</code></pre>
 
 What you'll see is that both of the pagination url sets point to the app2 subdirectory.
 
-This seems to be caused by the fact that I'm not calling a single sitemap index from the root urls file,
-but instead calling two, one from each app's urlset. 
+This seems to be caused by the fact that I'm not calling a single sitemap index from the root urls file, but instead calling two, one from each app's urlset. 
 
 Maybe this is the wrong way to use sitemaps, and I can be ignored, but I think the problem happens in line 17 of "django.contrib.sitemaps.views":http://code.djangoproject.com/browser/django/trunk/django/contrib/sitemaps/views.py where the url is reversed.
 

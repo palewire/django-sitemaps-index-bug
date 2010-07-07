@@ -1,4 +1,4 @@
-h1. Django Sitemaps Bug
+h1. Django Sitemaps Index Bug
 
 This Django project is meant to demonstrate a bug I've encountered while using the otherwise wonderful django.contrib.sitemaps.
 

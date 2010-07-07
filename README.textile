@@ -15,3 +15,5 @@ This seems to be caused by the fact that I'm not calling a single sitemap index 
 but instead calling two, one from each app's urlset. 
 
 Maybe this is the wrong way to use sitemaps, and I can be ignored, but I think the problem happens in line 17 of "django.contrib.sitemaps.views":http://code.djangoproject.com/browser/django/trunk/django/contrib/sitemaps/views.py where the url is reversed.
+
+Finally, I had this problem with Django 1.1, though I imagine it still would occur in 1.2 and later.

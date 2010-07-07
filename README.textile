@@ -1,0 +1,17 @@
+h2. Django Sitemaps Bug
+
+This Django project is meant to demonstrate a bug I've encountered while using the otherwise wonderful django.contrib.sitemaps.
+
+Here's the nut: If I try to use the "index" sitemap for more than one app, everything goes haywire and they start overwriting each other.
+
+To see what I mean, download the app and visit the two following urls:
+
+<pre><code>http://localhost:8888/app1/sitemap.xml
+http://localhost:8888/app2/sitemap.xml</code></pre>
+
+What you'll see is that both of the pagination url sets point to the app2 subdirectory.
+
+This seems to be caused by the fact that I'm not calling a single sitemap index from the root urls file,
+but instead calling two, one from each app's urlset. 
+
+Maybe this is the wrong way to use sitemaps, and I can be ignored, but I think the problem happens in line 17 of django.contrib.sitemaps.views where the url is reversed.
